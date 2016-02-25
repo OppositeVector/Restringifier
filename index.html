@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Restringifier</title>
+		<link rel = "stylesheet" href = "includes/style.css">
+		<script type="text/javascript" src="includes/SimpleTokenizer.js"></script>
+		<script type="text/javascript" src="includes/Restringifier.js"></script>
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+			<h1>Restringifier</h1>
+			<h6>An alternative to broken fingers</h6>
+			<div class="divider"></div>
+			<textarea id="input" rows=12 placeholder="hi there, dude number 3421 !.... WORD"></textarea>
+			<div class="applyBlock">
+				<button id="applyBtn" onclick="Apply();">Restringify</button>
+			</div>
+			<div class="formatBlock">
+				<label>Format</label>
+				<select id="format">
+					<option value="json">Json</option>
+					<option value="c#">C#</option>
+					<option value="csv">CSV</option>
+				</select>
+			</div>
+			<div class="patternBlock">
+				<label>Pattern</label>
+				<input id="pattern" placeholder="[A-Za-z0-9]+" value="[A-Za-z0-9]+">
+			</div>
+			<textarea id="output" rows=12 placeholder="[ 'hi', 'there', 'dude', 'number', '3421', 'WORD' ]"></textarea>
+		</div>
+
+		<script>
+			OnLoad();
+		</script>
+
+	</body>
+
+</html>
